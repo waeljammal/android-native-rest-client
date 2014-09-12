@@ -39,7 +39,7 @@ public class Main extends ListActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new RequestSkillsOperation().execute("http://10.0.1.50:8080/allSkills.json");
+        new RequestSkillsOperation().execute("http://10.0.2.2:8080/allSkills.json");
     }
 
     public void handleResponse(String json)
@@ -64,7 +64,7 @@ public class Main extends ListActivity
     }
 
     /**
-     * Requests the restaurant list asynchronously
+     * Requests the skills list asynchronously
      */
     private final class RequestSkillsOperation extends AsyncTask<String, Integer, String>
     {
@@ -86,7 +86,7 @@ public class Main extends ListActivity
         @Override
         protected void onPreExecute()
         {
-            _dialog.setTitle("Searching For Restaurants");
+            _dialog.setTitle("Loading Skills");
             _dialog.show();
         }
 
