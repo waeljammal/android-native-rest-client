@@ -71,10 +71,10 @@ public class Main extends ListActivity
         public static final int POST_TASK = 1;
         public static final int GET_TASK = 2;
 
-        private final HttpClient _client = new DefaultHttpClient();
+        private static final String TAG = "RequestSkillsOperation";
+
         private ProgressDialog _dialog = new ProgressDialog(Main.this);
         private int taskType = GET_TASK;
-        private static final String TAG = "RequestRestaurantsOperation";
         private ArrayList<NameValuePair> params = new ArrayList<NameValuePair>();
 
         // connection timeout, in milliseconds (waiting to connect)
