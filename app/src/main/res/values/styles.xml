@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="JEEditText" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="JETextViewMediumWhite" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>
