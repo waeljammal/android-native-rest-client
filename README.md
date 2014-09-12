@@ -1,7 +1,7 @@
 android-native-rest-client
 ==========================
 
-Sample code for potential employees
+Sample code for potential employers.
 
 Native android client for the java-spring-rest service.
 
