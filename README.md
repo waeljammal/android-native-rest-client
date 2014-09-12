@@ -1,6 +1,8 @@
 android-native-rest-client
 ==========================
 
+Sample code for potential employees
+
 Native android client for the java-spring-rest service.
 
 Make sure you launch the java-spring-rest service by following the instructions in the java-spring-rest read me.
