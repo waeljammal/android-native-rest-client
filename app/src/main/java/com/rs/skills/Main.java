@@ -39,7 +39,7 @@ public class Main extends ListActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new RequestRestaurantsOperation().execute("http://10.0.1.50:8080/allSkills.json");
+        new RequestSkillsOperation().execute("http://10.0.1.50:8080/allSkills.json");
     }
 
     public void handleResponse(String json)
@@ -66,7 +66,7 @@ public class Main extends ListActivity
     /**
      * Requests the restaurant list asynchronously
      */
-    private final class RequestRestaurantsOperation extends AsyncTask<String, Integer, String>
+    private final class RequestSkillsOperation extends AsyncTask<String, Integer, String>
     {
         public static final int POST_TASK = 1;
         public static final int GET_TASK = 2;
